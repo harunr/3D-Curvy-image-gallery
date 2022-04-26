@@ -1,0 +1,182 @@
+
+/* Fonts style */
+
+
+
+
+
+
+/* // End Fonts style */
+
+
+
+
+
+/*	Resets
+	------	*/
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, 
+p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em, 
+img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, hr, 
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend, 
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figure, figcaption, hgroup, 
+menu, footer, header, nav, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+ul{ 
+    list-style: none;
+}
+article, aside, canvas, figure, figure img, figcaption, hgroup,
+footer, header, nav, section, audio, video {
+	display: block;
+}
+
+.clear:after{content:".";display:block;clear:both;visibility:hidden;line-height:0;height:0}
+a img{
+    border:0;
+}
+a,input,select,textarea{
+    outline:none;
+}
+input::-moz-focus-inner{
+    border:0; padding: 0;
+}
+
+img{
+    float: left;
+    height: auto;
+}
+
+/* Selection colours (easy to forget) */
+
+img::selection 		{background: transparent;}
+img::-moz-selection	{background: transparent;}
+a{text-decoration: none; display: inline-block;}
+/*a:hover{text-decoration: underline; -webkit-transition: all .2s ease-in-out; -moz-transition: all .2s ease-in-out; transition: all .2s ease-in-out;}*/
+
+
+
+/*		Default Layout 
+-------------------------------------------------------------------------------
+*/
+
+body {background: rgb(255,255,255); color: rgb(60,60,60); -webkit-text-size-adjust: 100%; -moz-text-size-adjust:100%; -moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased; overflow-x: hidden; overflow-y:auto; background-image: url(../images/bg-img3.jpg); background-size: cover;}
+
+*{-webkit-box-sizing: border-box;-moz-box-sizing:border-box; box-sizing: border-box;}
+
+
+
+.main-wrap{float: left; width: 100%; overflow-x: hidden;}
+.gallery-item-wrap{float: left; width: 100%; -webkit-perspective: 1000px; -moz-perspective: 1000px; perspective: 1000px; -webkit-perspective-origin: 950px 820px 820px; -moz-perspective-origin: 950px 820px; perspective-origin: 950px 820px; padding: 100px 85px 70px; position: relative;}
+.gallery-item-wrap:before,.gallery-item-wrap:after{position: absolute; left: 0; top: 32px; bottom: 77px; width: 30px; content: ""; /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#efe388+0,592d13+100 */
+background: rgb(239,227,136); /* Old browsers */
+background: -moz-linear-gradient(top, rgba(239,227,136,1) 0%, rgba(89,45,19,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(239,227,136,1) 0%,rgba(89,45,19,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(239,227,136,1) 0%,rgba(89,45,19,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#efe388', endColorstr='#592d13',GradientType=0 ); /* IE6-9 */ transform: rotateY(-20deg); z-index: 2;}
+.gallery-item-wrap:after{left: auto; right: 0; transform: rotateY(20deg);}
+.gallery-item-wrap div{float: left; width: 11.11111111111111%; transform-style: preserve-3D; background: #ededed; padding: 5px; border: 3px solid blue; border-radius: 10px;}
+.gallery-item-wrap img{float: left; width: 100%; height: auto;}
+.gallery-item-wrap div:nth-child(9n+1){-webkit-transform: rotateY(30deg); -moz-transform: rotateY(30deg); transform: rotateY(30deg); -webkit-transform-origin: 100% 00%; -moz-transform-origin: 100% 00%; transform-origin: 100% 00%;}
+.gallery-item-wrap div:nth-child(9n+2){-webkit-transform: rotateY(10deg); -moz-transform: rotateY(10deg); transform: rotateY(10deg); -webkit-transform-origin: 0% 0%; -moz-transform-origin: 0% 0%; transform-origin: 0% 0%;}
+.gallery-item-wrap div:nth-child(9n+3){-webkit-transform: rotateY(7deg); -moz-transform: rotateY(7deg); transform: rotateY(7deg); -webkit-transform-origin: -134%; -moz-transform-origin: -134%; transform-origin: -134%;}
+.gallery-item-wrap div:nth-child(9n+4){-webkit-transform: rotateY(3deg); -moz-transform: rotateY(3deg); transform: rotateY(3deg); -webkit-transform-origin: -525%; -moz-transform-origin: -525%; transform-origin: -525%;}
+.gallery-item-wrap div:nth-child(9n+5){-webkit-transform: rotateY(1deg); -moz-transform: rotateY(1deg); transform: rotateY(1deg); -webkit-transform-origin: -1910%; -moz-transform-origin: -1910%; transform-origin: -1910%;}
+.gallery-item-wrap div:nth-child(9n+6){-webkit-transform: rotateY(-4deg); -moz-transform: rotateY(-4deg); transform: rotateY(-4deg); -webkit-transform-origin: 525%; -moz-transform-origin: 525%; transform-origin: 525%;}
+.gallery-item-wrap div:nth-child(9n+7){-webkit-transform: rotateY(-7deg); -moz-transform: rotateY(-7deg); transform: rotateY(-7deg); -webkit-transform-origin: 255%; -moz-transform-origin: 255%; transform-origin: 255%;}
+.gallery-item-wrap div:nth-child(9n+8){-webkit-transform: rotateY(-10deg); -moz-transform: rotateY(-10deg); transform: rotateY(-10deg); -webkit-transform-origin: 102% 0%; -moz-transform-origin: 102% 0%; -webkit-transform-origin: 102% 0%; -moz-transform-origin: 102% 0%; transform-origin: 102% 0%;}
+.gallery-item-wrap div:nth-child(9n+9){-webkit-transform: rotateY(-30deg); -moz-transform: rotateY(-30deg); transform: rotateY(-30deg); -webkit-transform-origin: 0% 100%; -moz-transform-origin: 0% 100%; transform-origin: 0% 100%;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =======================================================================================================
+============================================ Responsive style ========================================== */
+
+/*		Mobile Layout: 320px and 480px and more but less than or equal to 767px.
+----------------------------------------------------------------------------------
+*/
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    input[type="text"],input[type="email"],input[type="search"],input[type="number"],input[type="submit"],input[type="password"],select,textarea{-webkit-appearance:none;-moz-appearance:none;appearance:none; border-radius: 0}
+
+}
+
+
+
+/*		Wide Mobile Layout: 480px.
+------------------------------------------------------------
+*/
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+
+}
+
+
+/*		Tablet Layout: 768px.
+-----------------------------------------------------------------
+*/
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    input[type="text"],input[type="email"],input[type="search"],input[type="number"],input[type="submit"],input[type="password"],select,textarea{-webkit-appearance:none;-moz-appearance:none;appearance:none; border-radius: 0}
+	
+}
+
+
+/*		Tablet Layout: 1024px.
+-----------------------------------------------------------------
+*/
+
+@media only screen and (min-width: 992px) and (max-width: 1024px) {
+    input[type="text"],input[type="email"],input[type="search"],input[type="number"],input[type="submit"],input[type="password"],select,textarea{-webkit-appearance:none;-moz-appearance:none;appearance:none; border-radius: 0}
+	
+}
+
+
+
+
+/*	Retina media query.
+	Overrides styles for devices with a 
+	device-pixel-ratio of 2+, such as iPhone 4.
+-----------------------------------------------    */
+
+@media 
+	only screen and (-webkit-min-device-pixel-ratio: 2),
+	only screen and (min-device-pixel-ratio: 2) {
+	
+	
+}
+
+
+
+
+
+
+
